@@ -1,0 +1,331 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+h1 {
+  text-decoration: underline;
+}
+#task1 {
+  background-image: url(assets/pic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: task1;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.one-img-slide {
+  width: 500px;
+  height: 300px;
+}
+@keyframes task1 {
+  0% {
+    background-image: url(assets/pic1.jpg);
+  }
+  10% {
+    background-image: url(assets/pic1.jpg);
+  }
+  11% {
+    background-image: url(assets/pic2.jpg);
+  }
+  21% {
+    background-image: url(assets/pic2.jpg);
+  }
+  22% {
+    background-image: url(assets/pic3.jpg);
+  }
+  32% {
+    background-image: url(assets/pic3.jpg);
+  }
+  33% {
+    background-image: url(assets/pic4.jpg);
+  }
+  43% {
+    background-image: url(assets/pic4.jpg);
+  }
+  44% {
+    background-image: url(assets/pic5.jpg);
+  }
+  54% {
+    background-image: url(assets/pic5.jpg);
+  }
+  55% {
+    background-image: url(assets/pic6.jpg);
+  }
+  65% {
+    background-image: url(assets/pic6.jpg);
+  }
+  66% {
+    background-image: url(assets/pic7.jpg);
+  }
+  76% {
+    background-image: url(assets/pic7.jpg);
+  }
+  77% {
+    background-image: url(assets/pic8.jpg);
+  }
+  87% {
+    background-image: url(assets/pic8.jpg);
+  }
+  88% {
+    background-image: url(assets/pic9.jpg);
+  }
+  99% {
+    background-image: url(assets/pic9.jpg);
+  }
+  100% {
+    background-image: url(assets/pic1.jpg);
+  }
+}
+/* משימה 2 */
+#task2Container {
+  display: flex;
+  gap: 1vw;
+  margin: 0 auto;
+}
+.imgContainer {
+  height: 300px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes container1 {
+  0% {
+    background-image: url(assets/pic1.jpg);
+  }
+  33% {
+    background-image: url(assets/pic1.jpg);
+  }
+  34% {
+    background-image: url(assets/pic2.jpg);
+  }
+  66% {
+    background-image: url(assets/pic2.jpg);
+  }
+  67% {
+    background-image: url(assets/pic3.jpg);
+  }
+  100% {
+    background-image: url(assets/pic3.jpg);
+  }
+}
+@keyframes container2 {
+  0% {
+    background-image: url(assets/pic4.jpg);
+  }
+  33% {
+    background-image: url(assets/pic4.jpg);
+  }
+  34% {
+    background-image: url(assets/pic5.jpg);
+  }
+  66% {
+    background-image: url(assets/pic5.jpg);
+  }
+  67% {
+    background-image: url(assets/pic6.jpg);
+  }
+  100% {
+    background-image: url(assets/pic6.jpg);
+  }
+}
+@keyframes container3 {
+  0% {
+    background-image: url(assets/pic7.jpg);
+  }
+  33% {
+    background-image: url(assets/pic7.jpg);
+  }
+  34% {
+    background-image: url(assets/pic8.jpg);
+  }
+  66% {
+    background-image: url(assets/pic8.jpg);
+  }
+  67% {
+    background-image: url(assets/pic9.jpg);
+  }
+  100% {
+    background-image: url(assets/pic9.jpg);
+  }
+}
+#container1 {
+  animation-name: container1;
+}
+#container2 {
+  animation-name: container2;
+}
+#container3 {
+  animation-name: container3;
+}
+/* משימה 3 */
+#task3 {
+  background-image: url(assets/pic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#task3:hover {
+  animation-name: task1;
+  animation-duration: 14s;
+  animation-timing-function: linear;
+}
+.one-img-slide {
+  width: 500px;
+  height: 300px;
+}
+/* משימה 4 */
+.arrow {
+  font-size: 50px;
+  position: absolute;
+  color: #000;
+  font-weight: 900;
+  z-index: 2;
+}
+#task4 {
+  height: 100%;
+  width: 100%;
+  background-image: url(assets/pic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#moveRight {
+  top: 130px;
+  right: 2px;
+}
+#moveLeft {
+  top: 130px;
+  left: 2px;
+}
+#moveRight:hover ~ #task4 {
+  animation-name: task1;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+#moveLeft:hover ~ #task4 {
+  animation-name: task1;
+  animation-duration: 10s;
+  animation-direction: reverse;
+}
+#task4Container {
+  position: relative;
+}
+.arrow:hover {
+  background-color: #00000071;
+  color: #fff;
+  cursor: pointer;
+}
+/* משימה 5 */
+#task5Container {
+  max-width: 100vw;
+  display: flex;
+  gap: 1vw;
+  margin: 5px;
+  position: relative;
+}
+#containerX {
+  background-image: url(assets/pic1.jpg);
+}
+#containerY {
+  background-image: url(assets/pic4.jpg);
+}
+#containerZ {
+  background-image: url(assets/pic7.jpg);
+}
+.imgContainer5 {
+  height: 300px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#task5Right {
+  top: 130px;
+  right: 2px;
+}
+#task5Left {
+  top: 130px;
+  left: 2px;
+}
+#task5Right:hover ~ #containerX {
+  animation-name: container1;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+#task5Right:hover ~ #containerY {
+  animation-name: container2;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+#task5Right:hover ~ #containerZ {
+  animation-name: container3;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+#task5Left:hover ~ #containerX {
+  animation-name: container1;
+  animation-duration: 10s;
+  animation-direction: reverse;
+}
+
+#task5Left:hover ~ #containerY {
+  animation-name: container2;
+  animation-duration: 10s;
+  animation-direction: reverse;
+}
+#task5Left:hover ~ #containerZ {
+  animation-name: container3;
+  animation-duration: 10s;
+  animation-direction: reverse;
+}
+/* משימה 6 */
+#task6Container {
+  position: relative;
+  width: calc(3 * 190px);
+  overflow: hidden;
+}
+#task6Right {
+  top: 90px;
+  right: 2px;
+}
+#task6Left {
+  top: 90px;
+  left: 2px;
+}
+#task6Container img {
+  width: 190px;
+  height: 190px;
+}
+#carousel {
+  display: flex;
+  flex-direction: row;
+}
+@keyframes task6right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+#task6Right:hover ~ #carousel {
+  animation-name: task6right;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#task6Left:hover ~ #carousel {
+  animation-name: task6right;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
